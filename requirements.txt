@@ -1,0 +1,5 @@
+# Colab already provides torch and triton. Do NOT reinstall them there.
+# Tested with: torch 2.11.0+cu130, triton 3.6.0, Python 3.13 on a Tesla T4.
+pandas
+numpy
+matplotlib

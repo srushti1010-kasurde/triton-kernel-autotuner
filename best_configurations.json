@@ -1,0 +1,266 @@
+{
+  "generated_at": "2026-10-13T07:48:59",
+  "environment": {
+    "gpu_name": "Tesla T4",
+    "compute_capability": "7.5",
+    "torch_version": "2.11.0+cu130",
+    "triton_version": "3.6.0",
+    "torch_cuda_build": "13.0",
+    "python_version": "3.13.15"
+  },
+  "workloads": [
+    {
+      "kernel": "vector_add",
+      "input_size": 10000,
+      "gpu": "Tesla T4",
+      "algorithm": "exhaustive",
+      "best_config": {
+        "block_size": 256,
+        "num_warps": 4
+      },
+      "meaning": "fastest among the valid configurations tested for this kernel, size and GPU",
+      "baseline_config": "B1024_W4",
+      "baseline_ms": 0.0046399999409914,
+      "tuned_ms": 0.0047679999843239,
+      "improvement_pct": -2.758621658629326,
+      "noise_pct": 19.46308901806996,
+      "classification": "within noise",
+      "configs_within_3pct_of_best_search_latency": [
+        "B256_W4",
+        "B512_W8"
+      ],
+      "same_winner_in_all_runs": false,
+      "configs_attempted": 8,
+      "configs_successful": 8,
+      "configs_failed": 0,
+      "tuning_time_s": 2.283226426000056
+    },
+    {
+      "kernel": "vector_add",
+      "input_size": 100000,
+      "gpu": "Tesla T4",
+      "algorithm": "exhaustive",
+      "best_config": {
+        "block_size": 128,
+        "num_warps": 4
+      },
+      "meaning": "fastest among the valid configurations tested for this kernel, size and GPU",
+      "baseline_config": "B1024_W4",
+      "baseline_ms": 0.0102399997413158,
+      "tuned_ms": 0.0098879998549819,
+      "improvement_pct": 3.4374989768184347,
+      "noise_pct": 5.177995356384886,
+      "classification": "within noise",
+      "configs_within_3pct_of_best_search_latency": [
+        "B128_W4",
+        "B256_W8",
+        "B1024_W4",
+        "B128_W8",
+        "B256_W4",
+        "B512_W4",
+        "B512_W8",
+        "B1024_W8"
+      ],
+      "same_winner_in_all_runs": false,
+      "configs_attempted": 8,
+      "configs_successful": 8,
+      "configs_failed": 0,
+      "tuning_time_s": 2.2670429629999944
+    },
+    {
+      "kernel": "vector_add",
+      "input_size": 1000003,
+      "gpu": "Tesla T4",
+      "algorithm": "exhaustive",
+      "best_config": {
+        "block_size": 128,
+        "num_warps": 4
+      },
+      "meaning": "fastest among the valid configurations tested for this kernel, size and GPU",
+      "baseline_config": "B1024_W4",
+      "baseline_ms": 0.0638400018215179,
+      "tuned_ms": 0.0521279983222484,
+      "improvement_pct": 18.34586961951156,
+      "noise_pct": 1.6541362158427535,
+      "classification": "clear improvement",
+      "configs_within_3pct_of_best_search_latency": [
+        "B128_W4",
+        "B256_W8",
+        "B128_W8"
+      ],
+      "same_winner_in_all_runs": false,
+      "configs_attempted": 8,
+      "configs_successful": 8,
+      "configs_failed": 0,
+      "tuning_time_s": 2.321830197000054
+    },
+    {
+      "kernel": "elementwise_mul",
+      "input_size": 10000,
+      "gpu": "Tesla T4",
+      "algorithm": "exhaustive",
+      "best_config": {
+        "block_size": 512,
+        "num_warps": 8
+      },
+      "meaning": "fastest among the valid configurations tested for this kernel, size and GPU",
+      "baseline_config": "B1024_W4",
+      "baseline_ms": 0.0046080001629889,
+      "tuned_ms": 0.0046399999409914,
+      "improvement_pct": -0.6944396022274535,
+      "noise_pct": 16.666671719414833,
+      "classification": "within noise",
+      "configs_within_3pct_of_best_search_latency": [
+        "B512_W8",
+        "B512_W4",
+        "B256_W4"
+      ],
+      "same_winner_in_all_runs": false,
+      "configs_attempted": 8,
+      "configs_successful": 8,
+      "configs_failed": 0,
+      "tuning_time_s": 2.2973764969999597
+    },
+    {
+      "kernel": "elementwise_mul",
+      "input_size": 100000,
+      "gpu": "Tesla T4",
+      "algorithm": "exhaustive",
+      "best_config": {
+        "block_size": 128,
+        "num_warps": 4
+      },
+      "meaning": "fastest among the valid configurations tested for this kernel, size and GPU",
+      "baseline_config": "B1024_W4",
+      "baseline_ms": 0.0102399997413158,
+      "tuned_ms": 0.0099839996546506,
+      "improvement_pct": 2.500000909494725,
+      "noise_pct": 6.410249473938918,
+      "classification": "within noise",
+      "configs_within_3pct_of_best_search_latency": [
+        "B128_W4",
+        "B512_W4",
+        "B256_W4",
+        "B128_W8",
+        "B256_W8",
+        "B512_W8",
+        "B1024_W4",
+        "B1024_W8"
+      ],
+      "same_winner_in_all_runs": false,
+      "configs_attempted": 8,
+      "configs_successful": 8,
+      "configs_failed": 0,
+      "tuning_time_s": 2.272806833000004
+    },
+    {
+      "kernel": "elementwise_mul",
+      "input_size": 1000003,
+      "gpu": "Tesla T4",
+      "algorithm": "exhaustive",
+      "best_config": {
+        "block_size": 256,
+        "num_warps": 8
+      },
+      "meaning": "fastest among the valid configurations tested for this kernel, size and GPU",
+      "baseline_config": "B1024_W4",
+      "baseline_ms": 0.0638720020651817,
+      "tuned_ms": 0.0519680008292198,
+      "improvement_pct": 18.63727588155733,
+      "noise_pct": 1.753508644537258,
+      "classification": "clear improvement",
+      "configs_within_3pct_of_best_search_latency": [
+        "B256_W8",
+        "B128_W4"
+      ],
+      "same_winner_in_all_runs": false,
+      "configs_attempted": 8,
+      "configs_successful": 8,
+      "configs_failed": 0,
+      "tuning_time_s": 2.3143243259999053
+    },
+    {
+      "kernel": "block_sum",
+      "input_size": 10000,
+      "gpu": "Tesla T4",
+      "algorithm": "exhaustive",
+      "best_config": {
+        "block_size": 1024,
+        "num_warps": 4
+      },
+      "meaning": "fastest among the valid configurations tested for this kernel, size and GPU",
+      "baseline_config": "B1024_W4",
+      "baseline_ms": 0.0044479998759925,
+      "tuned_ms": 0.0045440001413226,
+      "improvement_pct": -2.158279406621038,
+      "noise_pct": 21.58274172119011,
+      "classification": "same as baseline",
+      "configs_within_3pct_of_best_search_latency": [
+        "B1024_W4",
+        "B512_W8",
+        "B512_W4"
+      ],
+      "same_winner_in_all_runs": false,
+      "configs_attempted": 8,
+      "configs_successful": 8,
+      "configs_failed": 0,
+      "tuning_time_s": 2.4620997889999217
+    },
+    {
+      "kernel": "block_sum",
+      "input_size": 100000,
+      "gpu": "Tesla T4",
+      "algorithm": "exhaustive",
+      "best_config": {
+        "block_size": 256,
+        "num_warps": 4
+      },
+      "meaning": "fastest among the valid configurations tested for this kernel, size and GPU",
+      "baseline_config": "B1024_W4",
+      "baseline_ms": 0.0068479999899864,
+      "tuned_ms": 0.0068479999899864,
+      "improvement_pct": 0.0,
+      "noise_pct": 12.616823319620986,
+      "classification": "within noise",
+      "configs_within_3pct_of_best_search_latency": [
+        "B256_W4",
+        "B512_W4",
+        "B1024_W4"
+      ],
+      "same_winner_in_all_runs": false,
+      "configs_attempted": 8,
+      "configs_successful": 8,
+      "configs_failed": 0,
+      "tuning_time_s": 2.26579341899992
+    },
+    {
+      "kernel": "block_sum",
+      "input_size": 1000003,
+      "gpu": "Tesla T4",
+      "algorithm": "exhaustive",
+      "best_config": {
+        "block_size": 512,
+        "num_warps": 8
+      },
+      "meaning": "fastest among the valid configurations tested for this kernel, size and GPU",
+      "baseline_config": "B1024_W4",
+      "baseline_ms": 0.0245760008692741,
+      "tuned_ms": 0.0240959990769624,
+      "improvement_pct": 1.9531322238508917,
+      "noise_pct": 2.058433227500516,
+      "classification": "within noise",
+      "configs_within_3pct_of_best_search_latency": [
+        "B512_W8",
+        "B512_W4",
+        "B256_W4",
+        "B1024_W8",
+        "B1024_W4"
+      ],
+      "same_winner_in_all_runs": false,
+      "configs_attempted": 8,
+      "configs_successful": 8,
+      "configs_failed": 0,
+      "tuning_time_s": 2.2674345240000093
+    }
+  ]
+}

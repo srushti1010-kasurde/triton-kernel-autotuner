@@ -1,0 +1,897 @@
+{
+  "created_at": "2026-10-13T07:37:44",
+  "entries": {
+    "block_sum-63aa4a5c04583cea": {
+      "bench_settings": {
+        "confirm_repeats": 15,
+        "rep_ms": 50.0,
+        "repeats": 5,
+        "warmup_ms": 25.0
+      },
+      "best_config": {
+        "block_size": 1024,
+        "num_warps": 4
+      },
+      "created_at": "2026-10-13T07:47:19",
+      "environment": {
+        "compute_capability": "7.5",
+        "gpu_memory_gb": 14.56,
+        "gpu_name": "Tesla T4",
+        "python_version": "3.13.15",
+        "torch_cuda_build": "13.0",
+        "torch_version": "2.11.0+cu130",
+        "triton_version": "3.6.0"
+      },
+      "hits": 1,
+      "key_components": {
+        "algo_params": {},
+        "algorithm": "exhaustive",
+        "baseline": [
+          1024,
+          4
+        ],
+        "compute_capability": "7.5",
+        "dtype": "float32",
+        "gpu_name": "Tesla T4",
+        "kernel": "block_sum",
+        "kernel_version": "1",
+        "search_space": [
+          [
+            128,
+            4
+          ],
+          [
+            128,
+            8
+          ],
+          [
+            256,
+            4
+          ],
+          [
+            256,
+            8
+          ],
+          [
+            512,
+            4
+          ],
+          [
+            512,
+            8
+          ],
+          [
+            1024,
+            4
+          ],
+          [
+            1024,
+            8
+          ]
+        ],
+        "shape": [
+          10000
+        ],
+        "torch_cuda_build": "13.0",
+        "triton_version": "3.6.0"
+      },
+      "last_hit_at": "2026-10-13T07:48:39",
+      "measured": {
+        "baseline_config": {
+          "block_size": 1024,
+          "num_warps": 4
+        },
+        "baseline_ms": 0.0044479998759925365,
+        "baseline_spread_pct": 21.58274172119011,
+        "e2e_baseline_ms": 0.04669650002142589,
+        "e2e_tuned_ms": 0.0455040000133522,
+        "improvement_pct": -2.158279406621038,
+        "search_best_ms": 0.004352000076323748,
+        "tuned_ms": 0.004544000141322613,
+        "tuned_spread_pct": 21.12675681065479,
+        "verdict": "best config equals baseline (difference shown is pure measurement noise)"
+      },
+      "search": {
+        "algorithm": "exhaustive",
+        "attempted": 8,
+        "confirm_time_s": 1.69228986600001,
+        "failed": 0,
+        "successful": 8,
+        "tuning_time_s": 2.4620997889999217
+      }
+    },
+    "block_sum-6a975f2004bc200f": {
+      "bench_settings": {
+        "confirm_repeats": 15,
+        "rep_ms": 50.0,
+        "repeats": 5,
+        "warmup_ms": 25.0
+      },
+      "best_config": {
+        "block_size": 512,
+        "num_warps": 8
+      },
+      "created_at": "2026-10-13T07:47:27",
+      "environment": {
+        "compute_capability": "7.5",
+        "gpu_memory_gb": 14.56,
+        "gpu_name": "Tesla T4",
+        "python_version": "3.13.15",
+        "torch_cuda_build": "13.0",
+        "torch_version": "2.11.0+cu130",
+        "triton_version": "3.6.0"
+      },
+      "hits": 1,
+      "key_components": {
+        "algo_params": {},
+        "algorithm": "exhaustive",
+        "baseline": [
+          1024,
+          4
+        ],
+        "compute_capability": "7.5",
+        "dtype": "float32",
+        "gpu_name": "Tesla T4",
+        "kernel": "block_sum",
+        "kernel_version": "1",
+        "search_space": [
+          [
+            128,
+            4
+          ],
+          [
+            128,
+            8
+          ],
+          [
+            256,
+            4
+          ],
+          [
+            256,
+            8
+          ],
+          [
+            512,
+            4
+          ],
+          [
+            512,
+            8
+          ],
+          [
+            1024,
+            4
+          ],
+          [
+            1024,
+            8
+          ]
+        ],
+        "shape": [
+          1000003
+        ],
+        "torch_cuda_build": "13.0",
+        "triton_version": "3.6.0"
+      },
+      "last_hit_at": "2026-10-13T07:48:39",
+      "measured": {
+        "baseline_config": {
+          "block_size": 1024,
+          "num_warps": 4
+        },
+        "baseline_ms": 0.02457600086927414,
+        "baseline_spread_pct": 0.4557250415714855,
+        "e2e_baseline_ms": 0.08446200001799298,
+        "e2e_tuned_ms": 0.09646599994539429,
+        "improvement_pct": 1.9531322238508915,
+        "search_best_ms": 0.02393599972128868,
+        "tuned_ms": 0.02409599907696247,
+        "tuned_spread_pct": 2.0584332275005157,
+        "verdict": "difference is within measurement noise (~2.1% spread)"
+      },
+      "search": {
+        "algorithm": "exhaustive",
+        "attempted": 8,
+        "confirm_time_s": 1.6806993319999037,
+        "failed": 0,
+        "successful": 8,
+        "tuning_time_s": 2.2674345240000093
+      }
+    },
+    "block_sum-af06cf8871d4237c": {
+      "bench_settings": {
+        "confirm_repeats": 15,
+        "rep_ms": 50.0,
+        "repeats": 5,
+        "warmup_ms": 25.0
+      },
+      "best_config": {
+        "block_size": 256,
+        "num_warps": 4
+      },
+      "created_at": "2026-10-13T07:47:23",
+      "environment": {
+        "compute_capability": "7.5",
+        "gpu_memory_gb": 14.56,
+        "gpu_name": "Tesla T4",
+        "python_version": "3.13.15",
+        "torch_cuda_build": "13.0",
+        "torch_version": "2.11.0+cu130",
+        "triton_version": "3.6.0"
+      },
+      "hits": 1,
+      "key_components": {
+        "algo_params": {},
+        "algorithm": "exhaustive",
+        "baseline": [
+          1024,
+          4
+        ],
+        "compute_capability": "7.5",
+        "dtype": "float32",
+        "gpu_name": "Tesla T4",
+        "kernel": "block_sum",
+        "kernel_version": "1",
+        "search_space": [
+          [
+            128,
+            4
+          ],
+          [
+            128,
+            8
+          ],
+          [
+            256,
+            4
+          ],
+          [
+            256,
+            8
+          ],
+          [
+            512,
+            4
+          ],
+          [
+            512,
+            8
+          ],
+          [
+            1024,
+            4
+          ],
+          [
+            1024,
+            8
+          ]
+        ],
+        "shape": [
+          100000
+        ],
+        "torch_cuda_build": "13.0",
+        "triton_version": "3.6.0"
+      },
+      "last_hit_at": "2026-10-13T07:48:39",
+      "measured": {
+        "baseline_config": {
+          "block_size": 1024,
+          "num_warps": 4
+        },
+        "baseline_ms": 0.00684799998998642,
+        "baseline_spread_pct": 12.616823319620986,
+        "e2e_baseline_ms": 0.044960499963053735,
+        "e2e_tuned_ms": 0.044927499970981444,
+        "improvement_pct": 0.0,
+        "search_best_ms": 0.006719999946653843,
+        "tuned_ms": 0.00684799998998642,
+        "tuned_spread_pct": 10.747663805605995,
+        "verdict": "difference is within measurement noise (~12.6% spread)"
+      },
+      "search": {
+        "algorithm": "exhaustive",
+        "attempted": 8,
+        "confirm_time_s": 1.69570289100011,
+        "failed": 0,
+        "successful": 8,
+        "tuning_time_s": 2.2657934189999196
+      }
+    },
+    "elementwise_mul-91aeb0034d8da85f": {
+      "bench_settings": {
+        "confirm_repeats": 15,
+        "rep_ms": 50.0,
+        "repeats": 5,
+        "warmup_ms": 25.0
+      },
+      "best_config": {
+        "block_size": 256,
+        "num_warps": 8
+      },
+      "created_at": "2026-10-13T07:47:15",
+      "environment": {
+        "compute_capability": "7.5",
+        "gpu_memory_gb": 14.56,
+        "gpu_name": "Tesla T4",
+        "python_version": "3.13.15",
+        "torch_cuda_build": "13.0",
+        "torch_version": "2.11.0+cu130",
+        "triton_version": "3.6.0"
+      },
+      "hits": 1,
+      "key_components": {
+        "algo_params": {},
+        "algorithm": "exhaustive",
+        "baseline": [
+          1024,
+          4
+        ],
+        "compute_capability": "7.5",
+        "dtype": "float32",
+        "gpu_name": "Tesla T4",
+        "kernel": "elementwise_mul",
+        "kernel_version": "1",
+        "search_space": [
+          [
+            128,
+            4
+          ],
+          [
+            128,
+            8
+          ],
+          [
+            256,
+            4
+          ],
+          [
+            256,
+            8
+          ],
+          [
+            512,
+            4
+          ],
+          [
+            512,
+            8
+          ],
+          [
+            1024,
+            4
+          ],
+          [
+            1024,
+            8
+          ]
+        ],
+        "shape": [
+          1000003
+        ],
+        "torch_cuda_build": "13.0",
+        "triton_version": "3.6.0"
+      },
+      "last_hit_at": "2026-10-13T07:48:39",
+      "measured": {
+        "baseline_config": {
+          "block_size": 1024,
+          "num_warps": 4
+        },
+        "baseline_ms": 0.06387200206518173,
+        "baseline_spread_pct": 1.7535086445372579,
+        "e2e_baseline_ms": 0.13377550010318373,
+        "e2e_tuned_ms": 0.12614250010756223,
+        "improvement_pct": 18.63727588155733,
+        "search_best_ms": 0.052319999784231186,
+        "tuned_ms": 0.05196800082921982,
+        "tuned_spread_pct": 1.4778365732491072,
+        "verdict": "tuned config measurably faster than baseline"
+      },
+      "search": {
+        "algorithm": "exhaustive",
+        "attempted": 8,
+        "confirm_time_s": 1.7211605499999223,
+        "failed": 0,
+        "successful": 8,
+        "tuning_time_s": 2.3143243259999053
+      }
+    },
+    "elementwise_mul-9a498c16454b865a": {
+      "bench_settings": {
+        "confirm_repeats": 15,
+        "rep_ms": 50.0,
+        "repeats": 5,
+        "warmup_ms": 25.0
+      },
+      "best_config": {
+        "block_size": 128,
+        "num_warps": 4
+      },
+      "created_at": "2026-10-13T07:47:11",
+      "environment": {
+        "compute_capability": "7.5",
+        "gpu_memory_gb": 14.56,
+        "gpu_name": "Tesla T4",
+        "python_version": "3.13.15",
+        "torch_cuda_build": "13.0",
+        "torch_version": "2.11.0+cu130",
+        "triton_version": "3.6.0"
+      },
+      "hits": 1,
+      "key_components": {
+        "algo_params": {},
+        "algorithm": "exhaustive",
+        "baseline": [
+          1024,
+          4
+        ],
+        "compute_capability": "7.5",
+        "dtype": "float32",
+        "gpu_name": "Tesla T4",
+        "kernel": "elementwise_mul",
+        "kernel_version": "1",
+        "search_space": [
+          [
+            128,
+            4
+          ],
+          [
+            128,
+            8
+          ],
+          [
+            256,
+            4
+          ],
+          [
+            256,
+            8
+          ],
+          [
+            512,
+            4
+          ],
+          [
+            512,
+            8
+          ],
+          [
+            1024,
+            4
+          ],
+          [
+            1024,
+            8
+          ]
+        ],
+        "shape": [
+          100000
+        ],
+        "torch_cuda_build": "13.0",
+        "triton_version": "3.6.0"
+      },
+      "last_hit_at": "2026-10-13T07:48:39",
+      "measured": {
+        "baseline_config": {
+          "block_size": 1024,
+          "num_warps": 4
+        },
+        "baseline_ms": 0.010239999741315842,
+        "baseline_spread_pct": 1.4062471009855648,
+        "e2e_baseline_ms": 0.04496799999742507,
+        "e2e_tuned_ms": 0.04275899993899657,
+        "improvement_pct": 2.500000909494725,
+        "search_best_ms": 0.010048000141978264,
+        "tuned_ms": 0.009983999654650688,
+        "tuned_spread_pct": 6.410249473938918,
+        "verdict": "difference is within measurement noise (~6.4% spread)"
+      },
+      "search": {
+        "algorithm": "exhaustive",
+        "attempted": 8,
+        "confirm_time_s": 1.6980598059999465,
+        "failed": 0,
+        "successful": 8,
+        "tuning_time_s": 2.272806833000004
+      }
+    },
+    "elementwise_mul-b07436b40d2eb78f": {
+      "bench_settings": {
+        "confirm_repeats": 15,
+        "rep_ms": 50.0,
+        "repeats": 5,
+        "warmup_ms": 25.0
+      },
+      "best_config": {
+        "block_size": 512,
+        "num_warps": 8
+      },
+      "created_at": "2026-10-13T07:47:07",
+      "environment": {
+        "compute_capability": "7.5",
+        "gpu_memory_gb": 14.56,
+        "gpu_name": "Tesla T4",
+        "python_version": "3.13.15",
+        "torch_cuda_build": "13.0",
+        "torch_version": "2.11.0+cu130",
+        "triton_version": "3.6.0"
+      },
+      "hits": 1,
+      "key_components": {
+        "algo_params": {},
+        "algorithm": "exhaustive",
+        "baseline": [
+          1024,
+          4
+        ],
+        "compute_capability": "7.5",
+        "dtype": "float32",
+        "gpu_name": "Tesla T4",
+        "kernel": "elementwise_mul",
+        "kernel_version": "1",
+        "search_space": [
+          [
+            128,
+            4
+          ],
+          [
+            128,
+            8
+          ],
+          [
+            256,
+            4
+          ],
+          [
+            256,
+            8
+          ],
+          [
+            512,
+            4
+          ],
+          [
+            512,
+            8
+          ],
+          [
+            1024,
+            4
+          ],
+          [
+            1024,
+            8
+          ]
+        ],
+        "shape": [
+          10000
+        ],
+        "torch_cuda_build": "13.0",
+        "triton_version": "3.6.0"
+      },
+      "last_hit_at": "2026-10-13T07:48:39",
+      "measured": {
+        "baseline_config": {
+          "block_size": 1024,
+          "num_warps": 4
+        },
+        "baseline_ms": 0.004608000162988901,
+        "baseline_spread_pct": 16.666671719414833,
+        "e2e_baseline_ms": 0.1074345000233734,
+        "e2e_tuned_ms": 0.06530500013468554,
+        "improvement_pct": -0.6944396022274535,
+        "search_best_ms": 0.004480000119656324,
+        "tuned_ms": 0.004639999940991402,
+        "tuned_spread_pct": 15.862069519216758,
+        "verdict": "difference is within measurement noise (~16.7% spread)"
+      },
+      "search": {
+        "algorithm": "exhaustive",
+        "attempted": 8,
+        "confirm_time_s": 1.6917434950000825,
+        "failed": 0,
+        "successful": 8,
+        "tuning_time_s": 2.2973764969999593
+      }
+    },
+    "vector_add-3cf53c2e625e4a79": {
+      "bench_settings": {
+        "confirm_repeats": 15,
+        "rep_ms": 50.0,
+        "repeats": 5,
+        "warmup_ms": 25.0
+      },
+      "best_config": {
+        "block_size": 128,
+        "num_warps": 4
+      },
+      "created_at": "2026-10-13T07:47:03",
+      "environment": {
+        "compute_capability": "7.5",
+        "gpu_memory_gb": 14.56,
+        "gpu_name": "Tesla T4",
+        "python_version": "3.13.15",
+        "torch_cuda_build": "13.0",
+        "torch_version": "2.11.0+cu130",
+        "triton_version": "3.6.0"
+      },
+      "hits": 1,
+      "key_components": {
+        "algo_params": {},
+        "algorithm": "exhaustive",
+        "baseline": [
+          1024,
+          4
+        ],
+        "compute_capability": "7.5",
+        "dtype": "float32",
+        "gpu_name": "Tesla T4",
+        "kernel": "vector_add",
+        "kernel_version": "1",
+        "search_space": [
+          [
+            128,
+            4
+          ],
+          [
+            128,
+            8
+          ],
+          [
+            256,
+            4
+          ],
+          [
+            256,
+            8
+          ],
+          [
+            512,
+            4
+          ],
+          [
+            512,
+            8
+          ],
+          [
+            1024,
+            4
+          ],
+          [
+            1024,
+            8
+          ]
+        ],
+        "shape": [
+          1000003
+        ],
+        "torch_cuda_build": "13.0",
+        "triton_version": "3.6.0"
+      },
+      "last_hit_at": "2026-10-13T07:48:39",
+      "measured": {
+        "baseline_config": {
+          "block_size": 1024,
+          "num_warps": 4
+        },
+        "baseline_ms": 0.06384000182151794,
+        "baseline_spread_pct": 1.6541362158427535,
+        "e2e_baseline_ms": 0.11140300000533898,
+        "e2e_tuned_ms": 0.0975895000010496,
+        "improvement_pct": 18.345869619511557,
+        "search_best_ms": 0.05251200124621391,
+        "tuned_ms": 0.05212799832224846,
+        "tuned_spread_pct": 1.2891371494739192,
+        "verdict": "tuned config measurably faster than baseline"
+      },
+      "search": {
+        "algorithm": "exhaustive",
+        "attempted": 8,
+        "confirm_time_s": 1.7259318339999936,
+        "failed": 0,
+        "successful": 8,
+        "tuning_time_s": 2.321830197000054
+      }
+    },
+    "vector_add-c392750fcc000727": {
+      "bench_settings": {
+        "confirm_repeats": 15,
+        "rep_ms": 50.0,
+        "repeats": 5,
+        "warmup_ms": 25.0
+      },
+      "best_config": {
+        "block_size": 128,
+        "num_warps": 4
+      },
+      "created_at": "2026-10-13T07:46:59",
+      "environment": {
+        "compute_capability": "7.5",
+        "gpu_memory_gb": 14.56,
+        "gpu_name": "Tesla T4",
+        "python_version": "3.13.15",
+        "torch_cuda_build": "13.0",
+        "torch_version": "2.11.0+cu130",
+        "triton_version": "3.6.0"
+      },
+      "hits": 1,
+      "key_components": {
+        "algo_params": {},
+        "algorithm": "exhaustive",
+        "baseline": [
+          1024,
+          4
+        ],
+        "compute_capability": "7.5",
+        "dtype": "float32",
+        "gpu_name": "Tesla T4",
+        "kernel": "vector_add",
+        "kernel_version": "1",
+        "search_space": [
+          [
+            128,
+            4
+          ],
+          [
+            128,
+            8
+          ],
+          [
+            256,
+            4
+          ],
+          [
+            256,
+            8
+          ],
+          [
+            512,
+            4
+          ],
+          [
+            512,
+            8
+          ],
+          [
+            1024,
+            4
+          ],
+          [
+            1024,
+            8
+          ]
+        ],
+        "shape": [
+          100000
+        ],
+        "torch_cuda_build": "13.0",
+        "triton_version": "3.6.0"
+      },
+      "last_hit_at": "2026-10-13T07:48:39",
+      "measured": {
+        "baseline_config": {
+          "block_size": 1024,
+          "num_warps": 4
+        },
+        "baseline_ms": 0.010239999741315842,
+        "baseline_spread_pct": 2.1874985220710723,
+        "e2e_baseline_ms": 0.042336000092291215,
+        "e2e_tuned_ms": 0.04188650007108663,
+        "improvement_pct": 3.4374989768184347,
+        "search_best_ms": 0.010048000141978264,
+        "tuned_ms": 0.0098879998549819,
+        "tuned_spread_pct": 5.177995356384886,
+        "verdict": "difference is within measurement noise (~5.2% spread)"
+      },
+      "search": {
+        "algorithm": "exhaustive",
+        "attempted": 8,
+        "confirm_time_s": 1.698494392999919,
+        "failed": 0,
+        "successful": 8,
+        "tuning_time_s": 2.2670429629999944
+      }
+    },
+    "vector_add-d76901a20a08c7d1": {
+      "bench_settings": {
+        "confirm_repeats": 15,
+        "rep_ms": 50.0,
+        "repeats": 5,
+        "warmup_ms": 25.0
+      },
+      "best_config": {
+        "block_size": 256,
+        "num_warps": 4
+      },
+      "created_at": "2026-10-13T07:46:55",
+      "environment": {
+        "compute_capability": "7.5",
+        "gpu_memory_gb": 14.56,
+        "gpu_name": "Tesla T4",
+        "python_version": "3.13.15",
+        "torch_cuda_build": "13.0",
+        "torch_version": "2.11.0+cu130",
+        "triton_version": "3.6.0"
+      },
+      "hits": 1,
+      "key_components": {
+        "algo_params": {},
+        "algorithm": "exhaustive",
+        "baseline": [
+          1024,
+          4
+        ],
+        "compute_capability": "7.5",
+        "dtype": "float32",
+        "gpu_name": "Tesla T4",
+        "kernel": "vector_add",
+        "kernel_version": "1",
+        "search_space": [
+          [
+            128,
+            4
+          ],
+          [
+            128,
+            8
+          ],
+          [
+            256,
+            4
+          ],
+          [
+            256,
+            8
+          ],
+          [
+            512,
+            4
+          ],
+          [
+            512,
+            8
+          ],
+          [
+            1024,
+            4
+          ],
+          [
+            1024,
+            8
+          ]
+        ],
+        "shape": [
+          10000
+        ],
+        "torch_cuda_build": "13.0",
+        "triton_version": "3.6.0"
+      },
+      "last_hit_at": "2026-10-13T07:48:39",
+      "measured": {
+        "baseline_config": {
+          "block_size": 1024,
+          "num_warps": 4
+        },
+        "baseline_ms": 0.004639999940991402,
+        "baseline_spread_pct": 12.413787428028234,
+        "e2e_baseline_ms": 0.0427674999627925,
+        "e2e_tuned_ms": 0.042564000068523455,
+        "improvement_pct": -2.758621658629326,
+        "search_best_ms": 0.004544000141322613,
+        "tuned_ms": 0.004767999984323978,
+        "tuned_spread_pct": 19.46308901806996,
+        "verdict": "difference is within measurement noise (~19.5% spread)"
+      },
+      "search": {
+        "algorithm": "exhaustive",
+        "attempted": 8,
+        "confirm_time_s": 1.7045736439999928,
+        "failed": 0,
+        "successful": 8,
+        "tuning_time_s": 2.2832264260000557
+      }
+    }
+  },
+  "schema_version": 1
+}
